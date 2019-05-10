@@ -9,6 +9,6 @@ namespace DAL.DBModels
         public int Id { get; set; }
         public string Title { get; set; }
         public string Director { get; set; }
-        public DateTime DateReleased { get; set; }
+        public string DateReleased { get; set; }
     }
 }

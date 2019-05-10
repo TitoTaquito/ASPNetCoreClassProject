@@ -10,10 +10,7 @@ namespace DAL
     {
         public MoviesDataContext (DbContextOptions options):base(options) { }
 
-        public MoviesDataContext()
-        {
-        }
 
-        public DbSet<Movie> Movies { get; set; }
+        public DbSet<Movie> Movie { get; set; }
     }
 }

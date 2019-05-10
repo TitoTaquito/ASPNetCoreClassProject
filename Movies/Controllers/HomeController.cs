@@ -11,13 +11,18 @@ namespace Movies.Controllers
     public class HomeController : Controller
     {
 
-        private MoviesDataContext _db = new MoviesDataContext();
+        private MoviesDataContext _db;
+
+        public HomeController (MoviesDataContext db)
+        {
+            _db = db;
+        }
 
 
         // GET: Home
         public ActionResult Index()
         {
-            return View(_db.Movies.ToList());
+            return View(_db.Movie.ToList());
         }
 
         // GET: Home/Details/5
