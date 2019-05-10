@@ -33,3 +33,6 @@ C:\work\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.csproj.CopyComplete
 C:\work\Movies\Movies\bin\Debug\netcoreapp2.1\DAL.dll
 C:\work\Movies\Movies\bin\Debug\netcoreapp2.1\DAL.pdb
 C:\work\Movies\Movies\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.g.cshtml.cs
+C:\work\Movies\Movies\obj\Debug\netcoreapp2.1\Razor\Views\Home\Edit.g.cshtml.cs
+C:\work\Movies\Movies\obj\Debug\netcoreapp2.1\Razor\Views\Home\Details.g.cshtml.cs
+C:\work\Movies\Movies\obj\Debug\netcoreapp2.1\Razor\Views\Home\Delete.g.cshtml.cs

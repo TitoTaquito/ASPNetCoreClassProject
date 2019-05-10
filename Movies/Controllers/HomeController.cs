@@ -29,7 +29,8 @@ namespace Movies.Controllers
         // GET: Home/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var movie = _db.Movie.Single(a => a.Id == id);
+            return View(movie);
         }
 
         // GET: Home/Create
@@ -61,17 +62,29 @@ namespace Movies.Controllers
         // GET: Home/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var movie = _db.Movie.Single(a => a.Id == id);
+            return View(movie);
         }
 
         // POST: Home/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(Movie movieToEdit)
         {
             try
             {
+                var editMovie = _db.Movie.Single(a=>a.Id == movieToEdit.Id);
+
+                if(editMovie ==null) View(movieToEdit);
+
+
                 // TODO: Add update logic here
+                editMovie.Title = movieToEdit.Title;
+                editMovie.Director = movieToEdit.Director;
+                editMovie.DateReleased = movieToEdit.DateReleased;
+
+                _db.SaveChanges();
+
 
                 return RedirectToAction(nameof(Index));
             }
@@ -81,19 +94,26 @@ namespace Movies.Controllers
             }
         }
 
+        [HttpGet]
         // GET: Home/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var movie = _db.Movie.Single(a => a.Id == id);
+            return View(movie);
         }
 
         // POST: Home/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(Movie m)
         {
             try
             {
+                var movie = _db.Movie.Single(a => a.Id == m.Id);
+
+                _db.Movie.Remove(movie);
+                _db.SaveChanges();
+
                 // TODO: Add delete logic here
 
                 return RedirectToAction(nameof(Index));
