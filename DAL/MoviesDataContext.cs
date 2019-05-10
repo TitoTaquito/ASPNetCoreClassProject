@@ -1,14 +1,19 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DAL.DBModels;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DAL
 {
-    class MoviesDataContext: DbContext
+    public class MoviesDataContext: DbContext
     {
         public MoviesDataContext (DbContextOptions options):base(options) { }
 
-        public DbSet<Movie> Movies
+        public MoviesDataContext()
+        {
+        }
+
+        public DbSet<Movie> Movies { get; set; }
     }
 }

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DAL.DBModels
+namespace Movies.Models
 {
-    public class Movie
+    class Movie
     {
         public int Id { get; set; }
         public string Title { get; set; }

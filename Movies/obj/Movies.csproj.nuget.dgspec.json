@@ -4,6 +4,62 @@
     "C:\\work\\Movies\\Movies\\Movies.csproj": {}
   },
   "projects": {
+    "C:\\work\\Movies\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\work\\Movies\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "C:\\work\\Movies\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\isinc\\.nuget\\packages\\",
+        "outputPath": "C:\\work\\Movies\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\isinc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
     "C:\\work\\Movies\\Movies\\Movies.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -29,7 +85,11 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\work\\Movies\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\work\\Movies\\DAL\\DAL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

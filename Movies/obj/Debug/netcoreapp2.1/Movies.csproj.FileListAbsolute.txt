@@ -30,3 +30,5 @@ C:\work\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.Views.pdb
 C:\work\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.dll
 C:\work\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.pdb
 C:\work\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.csproj.CopyComplete
+C:\work\Movies\Movies\bin\Debug\netcoreapp2.1\DAL.dll
+C:\work\Movies\Movies\bin\Debug\netcoreapp2.1\DAL.pdb

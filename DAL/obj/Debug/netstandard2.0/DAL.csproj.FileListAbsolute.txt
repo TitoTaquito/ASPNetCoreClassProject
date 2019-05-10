@@ -3,3 +3,6 @@ C:\work\Movies\DAL\bin\Debug\netstandard2.0\DAL.dll
 C:\work\Movies\DAL\obj\Debug\netstandard2.0\DAL.csproj.CoreCompileInputs.cache
 C:\work\Movies\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfoInputs.cache
 C:\work\Movies\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfo.cs
+C:\work\Movies\DAL\bin\Debug\netstandard2.0\DAL.pdb
+C:\work\Movies\DAL\obj\Debug\netstandard2.0\DAL.dll
+C:\work\Movies\DAL\obj\Debug\netstandard2.0\DAL.pdb
