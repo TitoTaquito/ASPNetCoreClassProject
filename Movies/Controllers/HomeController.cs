@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using DAL;
+using DAL.DBModels;
 
 namespace Movies.Controllers
 {
@@ -40,11 +41,14 @@ namespace Movies.Controllers
         // POST: Home/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create([Bind()] Movie movieToCreate)
         {
             try
             {
+                if (!ModelState.IsValid) return View();
                 // TODO: Add insert logic here
+                _db.Movie.Add(movieToCreate);
+                _db.SaveChanges();
 
                 return RedirectToAction(nameof(Index));
             }
